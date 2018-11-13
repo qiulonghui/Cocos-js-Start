@@ -1,0 +1,61 @@
+2018-11-13T12:53:37.626Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-13T12:53:37.626Z - normal: checking language setting...
+2018-11-13T12:53:37.626Z - normal: Language: zh
+2018-11-13T12:53:39.642Z - success: protocol editor-framework registered
+2018-11-13T12:53:39.642Z - success: protocol app registered
+2018-11-13T12:53:39.642Z - success: protocol theme registered
+2018-11-13T12:53:39.658Z - success: protocol packages registered
+2018-11-13T12:53:39.658Z - success: protocol unpack registerred
+2018-11-13T12:53:39.658Z - success: protocol disable-commonjs registerred
+2018-11-13T12:53:39.892Z - normal: connected!
+2018-11-13T12:53:39.892Z - normal: Check project D:\Cocos\Cocos-js-Start
+2018-11-13T12:53:39.908Z - normal: Initializing project D:\Cocos\Cocos-js-Start
+2018-11-13T12:53:39.908Z - normal: Initializing Cocos2d
+2018-11-13T12:53:41.070Z - normal: Initializing Asset Database
+2018-11-13T12:53:41.142Z - success: protocol uuid registerred
+2018-11-13T12:53:41.142Z - success: protocol db registerred
+2018-11-13T12:53:41.142Z - success: protocol thumbnail registerred
+2018-11-13T12:53:41.142Z - normal: Loading editor/builtin packages
+2018-11-13T12:53:41.361Z - success: assets loaded
+2018-11-13T12:53:41.377Z - success: builder loaded
+2018-11-13T12:53:41.377Z - success: cocos-analytics loaded
+2018-11-13T12:53:41.377Z - success: console loaded
+2018-11-13T12:53:41.439Z - success: fb-instant-games loaded
+2018-11-13T12:53:41.439Z - success: google-instant-games loaded
+2018-11-13T12:53:41.455Z - success: hierarchy loaded
+2018-11-13T12:53:41.455Z - success: inspector loaded
+2018-11-13T12:53:41.455Z - success: keystore loaded
+2018-11-13T12:53:41.455Z - success: node-library loaded
+2018-11-13T12:53:41.455Z - success: package-asset loaded
+2018-11-13T12:53:41.470Z - success: preferences loaded
+2018-11-13T12:53:41.470Z - success: project-exporter loaded
+2018-11-13T12:53:41.486Z - success: project-importer loaded
+2018-11-13T12:53:41.502Z - success: project-settings loaded
+2018-11-13T12:53:41.502Z - success: ui-kit loaded
+2018-11-13T12:53:41.502Z - success: scene loaded
+2018-11-13T12:53:41.502Z - success: sprite-editor loaded
+2018-11-13T12:53:41.517Z - success: store loaded
+2018-11-13T12:53:41.517Z - success: timeline loaded
+2018-11-13T12:53:41.517Z - normal: Loading builtin packages
+2018-11-13T12:53:41.517Z - success: asset-db-debugger loaded
+2018-11-13T12:53:41.517Z - success: code-editor loaded
+2018-11-13T12:53:41.517Z - success: color-picker loaded
+2018-11-13T12:53:41.658Z - success: google-play-instant loaded
+2018-11-13T12:53:41.658Z - success: jsb-adapter loaded
+2018-11-13T12:53:41.674Z - success: oppo-runtime loaded
+2018-11-13T12:53:41.674Z - success: package-manager loaded
+2018-11-13T12:53:41.830Z - success: qqplay-adapter loaded
+2018-11-13T12:53:41.845Z - success: sdkbox loaded
+2018-11-13T12:53:41.845Z - success: tester loaded
+2018-11-13T12:53:41.845Z - success: ui-grid loaded
+2018-11-13T12:53:41.845Z - success: ui-kit-preview-extra loaded
+2018-11-13T12:53:41.845Z - success: ui-kit-preview loaded
+2018-11-13T12:53:41.861Z - success: ui-tree loaded
+2018-11-13T12:53:41.861Z - success: vivo-runtime loaded
+2018-11-13T12:53:41.861Z - success: weapp-adapter loaded
+2018-11-13T12:53:43.547Z - normal: Loading packages
+2018-11-13T12:53:43.563Z - normal: Watching packages
+2018-11-13T12:53:44.079Z - normal: Run Application
+2018-11-13T12:53:45.847Z - success: preview server running at http://localhost:7456
+2018-11-13T15:28:16.506Z - warn: The 'type' attribute of 'Game.starPrefab' is undefined when loading script
+2018-11-13T15:34:51.368Z - warn: The 'type' attribute of 'Game.starPrefab' is undefined when loading script

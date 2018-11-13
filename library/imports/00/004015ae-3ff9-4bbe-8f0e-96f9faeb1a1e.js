@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '00401WuP/lLvo8Olvn66xoe', 'player');
-// scripts/player.js
+cc._RF.push(module, '00401WuP/lLvo8Olvn66xoe', 'Player');
+// scripts/Player.js
 
 "use strict";
 
@@ -34,7 +34,6 @@ cc.Class({
         // 跳跃上升
         var jumpUp = cc.moveBy(this.jumpDuration, cc.v2(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
 
-        console.log(2);
         // 下落
         var jumpDown = cc.moveBy(this.jumpDuration, cc.v2(0, -this.jumpHeight)).easing(cc.easeCubicActionIn());
 
@@ -42,15 +41,68 @@ cc.Class({
         return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
+    onKeyDown: function onKeyDown(event) {
+        // set a flag when key pressed
+        switch (event.keyCode) {
+            case cc.macro.KEY.a:
+                this.accLeft = true;
+                break;
+            case cc.macro.KEY.d:
+                this.accRight = true;
+                break;
+        }
+    },
+    onKeyUp: function onKeyUp(event) {
+        // unset a flag when key released
+        this.xSpeed = 0;
+        switch (event.keyCode) {
+            case cc.macro.KEY.a:
+                this.accLeft = false;
+                break;
+            case cc.macro.KEY.d:
+                this.accRight = false;
+                break;
+        }
+    },
     onLoad: function onLoad() {
         // 场景加载后开始执行
-        console.log(1);
+
+        // 初始化跳跃动作
         this.jumpAction = this.setJumpAction();
         this.node.runAction(this.jumpAction);
-    }
 
+        // 加速度方向开关
+        this.accLeft = false;
+        this.accRight = false;
+        // 角色当前水平方向速度
+        this.xSpeed = 0;
+
+        // 初始化键盘按键监听
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+    },
+    onDestroy: function onDestroy() {
+        // 取消键盘按键监听
+        cc.systemEvent.off(cc.systemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+        cc.systemEvent.off(cc.systemEvent.EventType.KEY_UP, this.onKeyUp, this);
+    },
+    update: function update(dt) {
+        // 根据当前加速度方向每帧更新速度
+        if (this.accLeft) {
+            this.xSpeed -= this.accel * dt;
+        } else if (this.accRight) {
+            this.xSpeed += this.accel * dt;
+        }
+
+        // 限制角色的速度不能超过最大值
+        if (Math.abs(this.xSpeed) > this.maxMoveSpeed) {
+            // 如果速度超过最大值，使用最大速度
+            this.xSpeed = this.maxMoveSpeed * this.xSpeed / Math.abs(this.xSpeed);
+        }
+
+        // 根据当前速度更新主角的位置
+        this.node.x += this.xSpeed * dt;
+    }
 });
 
 cc._RF.pop();
