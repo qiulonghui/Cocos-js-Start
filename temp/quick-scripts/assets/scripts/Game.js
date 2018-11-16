@@ -37,6 +37,12 @@ cc.Class({
         player: {
             default: null,
             type: cc.Node
+        },
+
+        // score label 的引用
+        scoreDisplay: {
+            default: null,
+            type: cc.Label
         }
     },
 
@@ -44,8 +50,20 @@ cc.Class({
         // 获取地平面的 y轴坐标
         this.groundY = this.ground.y + this.ground.height / 2;
 
+        // 初始化计时器
+        this.timer = 0;
+        this.starDuration = 0;
+
         // 生成一个新的星星
         this.spawnNewStar();
+
+        // 初始化计分
+        this.score = 0;
+    },
+    gainScore: function gainScore() {
+        this.score += 1;
+        // 将分数更新到scoreDisplay Label 的文字
+        this.scoreDisplay.string = 'Score: ' + this.score;
     },
     spawnNewStar: function spawnNewStar() {
         // 这个函数方法用来生成一个新的star 
@@ -56,6 +74,15 @@ cc.Class({
         this.node.addChild(newStar);
         // 为星星设置一个随机位置
         newStar.setPosition(this.getNewStarPosition());
+        // 在星星组件上暂存 Game对象引用
+        console.log(this); // this指向当前组件
+        console.log(newStar); // star节点
+        console.log(newStar.getComponent('Star'));
+        newStar.getComponent('Star').game = this;
+
+        // 消失的时间在范围中取一个值
+        this.starDuration = this.minStarDuration + Math.random() * (this.maxStarDuration - this.minStarDuration);
+        this.timer = 0; // 重置计时器
     },
     getNewStarPosition: function getNewStarPosition() {
         // 这个函数方法用来返回一个随机的x,y坐标
@@ -70,11 +97,20 @@ cc.Class({
         //返回星星的坐标
         return cc.v2(randX, randY);
     },
-    start: function start() {}
-}
-
-// update (dt) {},
-);
+    gameOver: function gameOver() {
+        this.player.stopAllActions(); // 停止 player 节点的跳跃动作
+        cc.director.loadScene('game'); // 重新加载游戏场景
+    },
+    update: function update(dt) {
+        // 每帧更新计时器，超过限度还没有生成新的星星
+        // 就会调用游戏失败逻辑
+        if (this.timer > this.starDuration) {
+            this.gameOver();
+            return;
+        }
+        this.timer += dt;
+    }
+});
 
 cc._RF.pop();
         }

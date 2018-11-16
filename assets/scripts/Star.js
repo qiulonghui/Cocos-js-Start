@@ -12,14 +12,39 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-       // 星星和主角的距离小于这个数值，就完成收集
-       pickRadius: 0,
+        // 星星和主角的距离小于这个数值，就完成收集
+        pickRadius: 0,
     },
 
+    getPlayerDistance() {
+        console.log(this)
+        // 根据 player 节点位置判断距离
+        var playerPos = this.game.player.getPosition();
+        // 根据两点位置计算距离
+        var dist = this.node.position.sub(playerPos).mag();
 
-    start () {
-
+        return dist;
+    },
+    
+    onPicked() {
+        // 生成一个新的星星
+        this.game.spawnNewStar();
+        // 销毁当前星星节点
+        this.node.destroy();
+        // 调用 Game 脚本的得分方法
+        this.game.gainScore();
     },
 
-    // update (dt) {},
+    update (dt) {
+        // 判断player和star的距离
+        if(this.getPlayerDistance() < this.pickRadius) {
+            this.onPicked();
+            return
+        }
+
+        // 更新星星的透明度
+        var opacityRatio = 1 - this.game.timer/this.game.starDuration;
+        var minOpacity = 50;
+        this.node.opacity = minOpacity + Math.floor(opacityRatio * (255 - minOpacity));
+    },
 });
