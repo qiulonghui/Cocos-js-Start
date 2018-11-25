@@ -1,59 +1,121 @@
-2018-11-16T13:22:47.295Z - normal: Load ~/.CocosCreator/settings.json
-2018-11-16T13:22:47.310Z - normal: checking language setting...
-2018-11-16T13:22:47.310Z - normal: Language: zh
-2018-11-16T13:22:49.326Z - success: protocol editor-framework registered
-2018-11-16T13:22:49.326Z - success: protocol app registered
-2018-11-16T13:22:49.326Z - success: protocol theme registered
-2018-11-16T13:22:49.326Z - success: protocol packages registered
-2018-11-16T13:22:49.326Z - success: protocol unpack registerred
-2018-11-16T13:22:49.326Z - success: protocol disable-commonjs registerred
-2018-11-16T13:22:49.639Z - normal: connected!
-2018-11-16T13:22:49.639Z - normal: Check project D:\Cocos\Cocos-js-Start
-2018-11-16T13:22:49.654Z - normal: Initializing project D:\Cocos\Cocos-js-Start
-2018-11-16T13:22:49.654Z - normal: Initializing Cocos2d
-2018-11-16T13:22:50.811Z - normal: Initializing Asset Database
-2018-11-16T13:22:50.889Z - success: protocol uuid registerred
-2018-11-16T13:22:50.889Z - success: protocol db registerred
-2018-11-16T13:22:50.889Z - success: protocol thumbnail registerred
-2018-11-16T13:22:50.889Z - normal: Loading editor/builtin packages
-2018-11-16T13:22:51.108Z - success: assets loaded
-2018-11-16T13:22:51.108Z - success: builder loaded
-2018-11-16T13:22:51.108Z - success: cocos-analytics loaded
-2018-11-16T13:22:51.108Z - success: console loaded
-2018-11-16T13:22:51.170Z - success: fb-instant-games loaded
-2018-11-16T13:22:51.170Z - success: google-instant-games loaded
-2018-11-16T13:22:51.186Z - success: hierarchy loaded
-2018-11-16T13:22:51.186Z - success: inspector loaded
-2018-11-16T13:22:51.186Z - success: keystore loaded
-2018-11-16T13:22:51.201Z - success: node-library loaded
-2018-11-16T13:22:51.201Z - success: package-asset loaded
-2018-11-16T13:22:51.201Z - success: preferences loaded
-2018-11-16T13:22:51.201Z - success: project-exporter loaded
-2018-11-16T13:22:51.233Z - success: project-importer loaded
-2018-11-16T13:22:51.233Z - success: project-settings loaded
-2018-11-16T13:22:51.233Z - success: ui-kit loaded
-2018-11-16T13:22:51.233Z - success: scene loaded
-2018-11-16T13:22:51.233Z - success: sprite-editor loaded
-2018-11-16T13:22:51.248Z - success: store loaded
-2018-11-16T13:22:51.248Z - success: timeline loaded
-2018-11-16T13:22:51.248Z - normal: Loading builtin packages
-2018-11-16T13:22:51.248Z - success: asset-db-debugger loaded
-2018-11-16T13:22:51.248Z - success: code-editor loaded
-2018-11-16T13:22:51.264Z - success: color-picker loaded
-2018-11-16T13:22:51.405Z - success: google-play-instant loaded
-2018-11-16T13:22:51.405Z - success: jsb-adapter loaded
-2018-11-16T13:22:51.405Z - success: oppo-runtime loaded
-2018-11-16T13:22:51.405Z - success: package-manager loaded
-2018-11-16T13:22:51.576Z - success: qqplay-adapter loaded
-2018-11-16T13:22:51.576Z - success: sdkbox loaded
-2018-11-16T13:22:51.592Z - success: tester loaded
-2018-11-16T13:22:51.592Z - success: ui-grid loaded
-2018-11-16T13:22:51.592Z - success: ui-kit-preview-extra loaded
-2018-11-16T13:22:51.592Z - success: ui-kit-preview loaded
-2018-11-16T13:22:51.592Z - success: ui-tree loaded
-2018-11-16T13:22:51.608Z - success: vivo-runtime loaded
-2018-11-16T13:22:51.608Z - success: weapp-adapter loaded
-2018-11-16T13:22:53.292Z - normal: Loading packages
-2018-11-16T13:22:53.308Z - normal: Watching packages
-2018-11-16T13:22:53.810Z - normal: Run Application
-2018-11-16T13:22:54.589Z - success: preview server running at http://localhost:7456
+2018-11-25T08:57:04.035Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-25T08:57:04.041Z - normal: checking language setting...
+2018-11-25T08:57:04.042Z - normal: Language: zh
+2018-11-25T08:57:06.094Z - success: protocol editor-framework registered
+2018-11-25T08:57:06.094Z - success: protocol app registered
+2018-11-25T08:57:06.094Z - success: protocol theme registered
+2018-11-25T08:57:06.095Z - success: protocol packages registered
+2018-11-25T08:57:06.095Z - success: protocol unpack registerred
+2018-11-25T08:57:06.095Z - success: protocol disable-commonjs registerred
+2018-11-25T08:57:06.388Z - normal: connected!
+2018-11-25T08:57:06.391Z - normal: Check project D:\Cocos\Cocos-js-Start
+2018-11-25T08:57:06.397Z - normal: Initializing project D:\Cocos\Cocos-js-Start
+2018-11-25T08:57:06.401Z - normal: Initializing Cocos2d
+2018-11-25T08:57:07.577Z - normal: Initializing Asset Database
+2018-11-25T08:57:07.650Z - success: protocol uuid registerred
+2018-11-25T08:57:07.650Z - success: protocol db registerred
+2018-11-25T08:57:07.651Z - success: protocol thumbnail registerred
+2018-11-25T08:57:07.651Z - normal: Loading editor/builtin packages
+2018-11-25T08:57:07.872Z - success: assets loaded
+2018-11-25T08:57:07.878Z - success: builder loaded
+2018-11-25T08:57:07.881Z - success: cocos-analytics loaded
+2018-11-25T08:57:07.886Z - success: console loaded
+2018-11-25T08:57:07.947Z - success: fb-instant-games loaded
+2018-11-25T08:57:07.950Z - success: google-instant-games loaded
+2018-11-25T08:57:07.956Z - success: hierarchy loaded
+2018-11-25T08:57:07.959Z - success: inspector loaded
+2018-11-25T08:57:07.961Z - success: keystore loaded
+2018-11-25T08:57:07.967Z - success: node-library loaded
+2018-11-25T08:57:07.969Z - success: package-asset loaded
+2018-11-25T08:57:07.971Z - success: preferences loaded
+2018-11-25T08:57:07.973Z - success: project-exporter loaded
+2018-11-25T08:57:07.998Z - success: project-importer loaded
+2018-11-25T08:57:08.001Z - success: project-settings loaded
+2018-11-25T08:57:08.004Z - success: ui-kit loaded
+2018-11-25T08:57:08.008Z - success: scene loaded
+2018-11-25T08:57:08.010Z - success: sprite-editor loaded
+2018-11-25T08:57:08.014Z - success: store loaded
+2018-11-25T08:57:08.020Z - success: timeline loaded
+2018-11-25T08:57:08.020Z - normal: Loading builtin packages
+2018-11-25T08:57:08.025Z - success: asset-db-debugger loaded
+2018-11-25T08:57:08.028Z - success: code-editor loaded
+2018-11-25T08:57:08.029Z - success: color-picker loaded
+2018-11-25T08:57:08.170Z - success: google-play-instant loaded
+2018-11-25T08:57:08.172Z - success: jsb-adapter loaded
+2018-11-25T08:57:08.177Z - success: oppo-runtime loaded
+2018-11-25T08:57:08.181Z - success: package-manager loaded
+2018-11-25T08:57:08.337Z - success: qqplay-adapter loaded
+2018-11-25T08:57:08.344Z - success: sdkbox loaded
+2018-11-25T08:57:08.347Z - success: tester loaded
+2018-11-25T08:57:08.352Z - success: ui-grid loaded
+2018-11-25T08:57:08.354Z - success: ui-kit-preview-extra loaded
+2018-11-25T08:57:08.356Z - success: ui-kit-preview loaded
+2018-11-25T08:57:08.358Z - success: ui-tree loaded
+2018-11-25T08:57:08.362Z - success: vivo-runtime loaded
+2018-11-25T08:57:08.363Z - success: weapp-adapter loaded
+2018-11-25T08:57:10.037Z - normal: Loading packages
+2018-11-25T08:57:10.046Z - normal: Watching packages
+2018-11-25T08:57:10.564Z - normal: Run Application
+2018-11-25T08:57:11.657Z - success: preview server running at http://localhost:7457
+2018-11-25T09:24:08.260Z - failed: [db-task][sync-changes] Failed to import asset D:\Cocos\Cocos-js-Start\assets\scripts\Player.js, message: Compile error: SyntaxError: D:/Cocos/Cocos-js-Start/assets/scripts/Player.js: Unexpected token (104:11)
+  102 | 
+  103 |         // 主角移动不能超过屏幕
+> 104 |         if() {
+      |            ^
+  105 |             
+  106 |         }
+  107 |     }
+    at Parser.pp$5.raise (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp$3.parseExprAtom (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3750:12)
+    at Parser.pp$3.parseExprSubscripts (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+    at Parser.pp$3.parseExpression (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3306:19)
+    at Parser.pp$3.parseParenExpression (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3789:18)
+2018-11-25T09:57:56.008Z - failed: load script [D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js] failed : ReferenceError: Player is not defined
+    at __define (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:39:19)
+    at D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:118:13
+    at Object.<anonymous> (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:125:11)
+    at Object.<anonymous> (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:128:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2018-11-25T15:07:35.627Z - failed: load script [D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js] failed : ReferenceError: Player is not defined
+    at __define (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:39:19)
+    at D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:143:13
+    at Object.<anonymous> (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:150:11)
+    at Object.<anonymous> (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:153:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2018-11-25T15:08:32.954Z - failed: load script [D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js] failed : ReferenceError: Player is not defined
+    at __define (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:39:19)
+    at D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:143:13
+    at Object.<anonymous> (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:150:11)
+    at Object.<anonymous> (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:153:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2018-11-25T15:09:43.871Z - failed: load script [D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js] failed : ReferenceError: Player is not defined
+    at __define (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:39:19)
+    at D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:143:13
+    at Object.<anonymous> (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:150:11)
+    at Object.<anonymous> (D:\Cocos\Cocos-js-Start\temp\quick-scripts\assets\scripts\Game.js:153:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)

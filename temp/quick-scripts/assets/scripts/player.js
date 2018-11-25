@@ -23,6 +23,9 @@ cc.Class({
         // 主角跳跃持续时间
         jumpDuration: 0,
 
+        // 辅助形变动作时间
+        squashDuration: 0,
+
         // 最大移动速度
         maxMoveSpeed: 0,
 
@@ -36,9 +39,12 @@ cc.Class({
 
         // 下落
         var jumpDown = cc.moveBy(this.jumpDuration, cc.v2(0, -this.jumpHeight)).easing(cc.easeCubicActionIn());
-
+        // 形变
+        var squash = cc.scaleTo(this.squashDuration, 1, 0.6);
+        var stretch = cc.scaleTo(this.squashDuration, 1, 1.2);
+        var scaleBack = cc.scaleTo(this.squashDuration, 1, 1);
         // 不断重复
-        return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
+        return cc.repeatForever(cc.sequence(squash, stretch, jumpUp, scaleBack, jumpDown));
     },
 
     onKeyDown: function onKeyDown(event) {
@@ -54,7 +60,6 @@ cc.Class({
     },
     onKeyUp: function onKeyUp(event) {
         // unset a flag when key released
-        this.xSpeed = 0;
         switch (event.keyCode) {
             case cc.macro.KEY.a:
                 this.accLeft = false;
@@ -66,10 +71,9 @@ cc.Class({
     },
     onLoad: function onLoad() {
         // 场景加载后开始执行
-
+        this.enabled = false;
         // 初始化跳跃动作
         this.jumpAction = this.setJumpAction();
-        this.node.runAction(this.jumpAction);
 
         // 加速度方向开关
         this.accLeft = false;
@@ -86,6 +90,19 @@ cc.Class({
         cc.systemEvent.off(cc.systemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.off(cc.systemEvent.EventType.KEY_UP, this.onKeyUp, this);
     },
+    startMoveAt: function startMoveAt(pos) {
+        // 角色属性位置初始化
+        this.enabled = true;
+        this.xSpeed = 0;
+        this.node.setPosition(pos);
+        this.node.runAction(this.setJumpAction());
+    },
+
+
+    stopMove: function stopMove() {
+        this.node.stopAllActions();
+    },
+
     update: function update(dt) {
         // 根据当前加速度方向每帧更新速度
         if (this.accLeft) {
@@ -102,6 +119,15 @@ cc.Class({
 
         // 根据当前速度更新主角的位置
         this.node.x += this.xSpeed * dt;
+
+        // 主角移动不能超过屏幕
+        if (this.node.x > this.node.parent.width / 2) {
+            this.node.x = this.node.parent.width / 2;
+            this.xSpeed = 0;
+        } else if (this.node.x < -this.node.parent.width / 2) {
+            this.node.x = -this.node.parent.width / 2;
+            this.xSpeed = 0;
+        }
     }
 });
 

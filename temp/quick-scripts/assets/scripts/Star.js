@@ -22,10 +22,20 @@ cc.Class({
         pickRadius: 0
     },
 
+    // use this for initialization
+    init: function init(game) {
+        this.game = game;
+        this.enabled = true;
+        this.node.opacity = 255;
+    },
+
+    reuse: function reuse(game) {
+        this.init(game);
+    },
     getPlayerDistance: function getPlayerDistance() {
-        console.log(this);
+        console.log(this.game.player.node);
         // 根据 player 节点位置判断距离
-        var playerPos = this.game.player.getPosition();
+        var playerPos = this.game.player.node.getPosition();
         // 根据两点位置计算距离
         var dist = this.node.position.sub(playerPos).mag();
 

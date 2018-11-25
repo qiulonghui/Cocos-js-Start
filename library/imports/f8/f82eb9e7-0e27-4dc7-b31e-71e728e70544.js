@@ -13,7 +13,7 @@ cc._RF.push(module, 'f82ebnnDidNx7Mececo5wVE', 'Game');
 // Learn life-cycle callbacks:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
-
+var Player = require("Player");
 cc.Class({
     extends: cc.Component,
 
@@ -36,13 +36,18 @@ cc.Class({
         // player节点，用于获取角色弹跳的高度，和控制角色行动开关
         player: {
             default: null,
-            type: cc.Node
+            type: Player
         },
 
         // score label 的引用
         scoreDisplay: {
             default: null,
             type: cc.Label
+        },
+
+        btnNode: {
+            default: null,
+            type: cc.Node
         }
     },
 
@@ -50,20 +55,45 @@ cc.Class({
         // 获取地平面的 y轴坐标
         this.groundY = this.ground.y + this.ground.height / 2;
 
+        this.currentStar = null;
+        this.currentStarX = 0;
+
         // 初始化计时器
         this.timer = 0;
         this.starDuration = 0;
 
-        // 生成一个新的星星
-        this.spawnNewStar();
+        // 游戏的运行状态
+        this.enabled = false;
 
-        // 初始化计分
-        this.score = 0;
+        // // 生成一个新的星星
+        // this.spawnNewStar();
+
+        // // 初始化计分
+        // this.score = 0;
+    },
+    onStartGame: function onStartGame() {
+        // 分数初始化
+        console.log('aaa');
+        this.resetScore();
+        // 游戏运行状态为true
+        this.enabled = true;
+        // 开始按钮和结束的提示隐藏
+        this.btnNode.x = 3000;
+        // this.gameOverNode.active = false;
+        // 重置角色的位置和速度
+        var cmpPlayer = this.player.getComponent('Player');
+        cmpPlayer.startMoveAt(cc.v2(0, this.groundY));
+        // 生成星星
+        this.spawnNewStar();
     },
     gainScore: function gainScore() {
         this.score += 1;
         // 将分数更新到scoreDisplay Label 的文字
-        this.scoreDisplay.string = 'Score: ' + this.score;
+        this.scoreDisplay.string = 'Score: ' + this.score.toString();
+    },
+    resetScore: function resetScore() {
+        this.score = 0;
+        this.scoreDisplay.string = 'Score: ' + this.score.toString();
     },
     spawnNewStar: function spawnNewStar() {
         // 这个函数方法用来生成一个新的star 
@@ -83,6 +113,7 @@ cc.Class({
         // 消失的时间在范围中取一个值
         this.starDuration = this.minStarDuration + Math.random() * (this.maxStarDuration - this.minStarDuration);
         this.timer = 0; // 重置计时器
+        this.currentStar = newStar;
     },
     getNewStarPosition: function getNewStarPosition() {
         // 这个函数方法用来返回一个随机的x,y坐标
@@ -98,14 +129,17 @@ cc.Class({
         return cc.v2(randX, randY);
     },
     gameOver: function gameOver() {
-        this.player.stopAllActions(); // 停止 player 节点的跳跃动作
-        cc.director.loadScene('game'); // 重新加载游戏场景
+        this.player.enabled = false;
+        this.player.stopMove();
+        this.currentStar.destroy();
+        this.btnNode.x = 0;
     },
     update: function update(dt) {
         // 每帧更新计时器，超过限度还没有生成新的星星
         // 就会调用游戏失败逻辑
         if (this.timer > this.starDuration) {
             this.gameOver();
+            this.enabled = false;
             return;
         }
         this.timer += dt;
