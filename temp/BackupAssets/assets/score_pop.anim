@@ -1,0 +1,40 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "score_pop",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.8,
+  "sample": 25,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "New Node": {
+        "props": {
+          "opacity": [],
+          "scaleX": [],
+          "scaleY": []
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "5242c8a4-e156-4fac-b257-e7050449b7e2"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.8,
+      "func": "",
+      "params": []
+    }
+  ]
+}

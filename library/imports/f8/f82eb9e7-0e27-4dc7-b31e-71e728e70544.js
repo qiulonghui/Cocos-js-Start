@@ -23,6 +23,10 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
+        scoreFXPrefab: {
+            default: null,
+            type: cc.Prefab
+        },
         // 星星产生后的消失时间的随机范围
         maxStarDuration: 0,
         minStarDuration: 0,
@@ -46,6 +50,11 @@ cc.Class({
         },
 
         btnNode: {
+            default: null,
+            type: cc.Node
+        },
+
+        gameOverNode: {
             default: null,
             type: cc.Node
         }
@@ -73,13 +82,12 @@ cc.Class({
     },
     onStartGame: function onStartGame() {
         // 分数初始化
-        console.log('aaa');
         this.resetScore();
         // 游戏运行状态为true
         this.enabled = true;
         // 开始按钮和结束的提示隐藏
         this.btnNode.x = 3000;
-        // this.gameOverNode.active = false;
+        this.gameOverNode.active = false;
         // 重置角色的位置和速度
         var cmpPlayer = this.player.getComponent('Player');
         cmpPlayer.startMoveAt(cc.v2(0, this.groundY));
@@ -90,6 +98,11 @@ cc.Class({
         this.score += 1;
         // 将分数更新到scoreDisplay Label 的文字
         this.scoreDisplay.string = 'Score: ' + this.score.toString();
+        // 播放特效
+        var fx = this.spawnScoreFX();
+        this.node.addChild(fx.node);
+        fx.node.setPosition(pos);
+        fx.play();
     },
     resetScore: function resetScore() {
         this.score = 0;
@@ -115,6 +128,16 @@ cc.Class({
         this.timer = 0; // 重置计时器
         this.currentStar = newStar;
     },
+
+
+    spawnScoreFX: function spawnScoreFX() {
+        var fx;
+
+        fx = cc.instantiate(this.scoreFXPrefab).getComponent('ScoreFX');
+        fx.init(this);
+        return fx;
+    },
+
     getNewStarPosition: function getNewStarPosition() {
         // 这个函数方法用来返回一个随机的x,y坐标
         var randX = 0;
@@ -129,6 +152,7 @@ cc.Class({
         return cc.v2(randX, randY);
     },
     gameOver: function gameOver() {
+        this.gameOverNode.active = true;
         this.player.enabled = false;
         this.player.stopMove();
         this.currentStar.destroy();
