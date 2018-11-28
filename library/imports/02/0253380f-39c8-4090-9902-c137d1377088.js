@@ -33,7 +33,6 @@ cc.Class({
         this.init(game);
     },
     getPlayerDistance: function getPlayerDistance() {
-        console.log(this.game.player.node);
         // 根据 player 节点位置判断距离
         var playerPos = this.game.player.node.getPosition();
         // 根据两点位置计算距离

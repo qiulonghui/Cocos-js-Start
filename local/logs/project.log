@@ -1,245 +1,71 @@
-2018-11-26T14:41:34.628Z - normal: Load ~/.CocosCreator/settings.json
-2018-11-26T14:41:34.636Z - normal: checking language setting...
-2018-11-26T14:41:34.636Z - normal: Language: zh
-2018-11-26T14:41:37.003Z - success: protocol editor-framework registered
-2018-11-26T14:41:37.003Z - success: protocol app registered
-2018-11-26T14:41:37.003Z - success: protocol theme registered
-2018-11-26T14:41:37.003Z - success: protocol packages registered
-2018-11-26T14:41:37.003Z - success: protocol unpack registerred
-2018-11-26T14:41:37.003Z - success: protocol disable-commonjs registerred
-2018-11-26T14:41:37.278Z - normal: connected!
-2018-11-26T14:41:37.284Z - normal: Check project D:\Cocos\Cocos-js-Start
-2018-11-26T14:41:37.289Z - normal: Initializing project D:\Cocos\Cocos-js-Start
-2018-11-26T14:41:37.293Z - normal: Initializing Cocos2d
-2018-11-26T14:41:38.686Z - normal: Initializing Asset Database
-2018-11-26T14:41:38.775Z - success: protocol uuid registerred
-2018-11-26T14:41:38.776Z - success: protocol db registerred
-2018-11-26T14:41:38.776Z - success: protocol thumbnail registerred
-2018-11-26T14:41:38.776Z - normal: Loading editor/builtin packages
-2018-11-26T14:41:39.061Z - success: assets loaded
-2018-11-26T14:41:39.067Z - success: builder loaded
-2018-11-26T14:41:39.073Z - success: cocos-analytics loaded
-2018-11-26T14:41:39.079Z - success: console loaded
-2018-11-26T14:41:39.155Z - success: fb-instant-games loaded
-2018-11-26T14:41:39.157Z - success: google-instant-games loaded
-2018-11-26T14:41:39.166Z - success: hierarchy loaded
-2018-11-26T14:41:39.174Z - success: inspector loaded
-2018-11-26T14:41:39.176Z - success: keystore loaded
-2018-11-26T14:41:39.183Z - success: node-library loaded
-2018-11-26T14:41:39.188Z - success: package-asset loaded
-2018-11-26T14:41:39.191Z - success: preferences loaded
-2018-11-26T14:41:39.194Z - success: project-exporter loaded
-2018-11-26T14:41:39.226Z - success: project-importer loaded
-2018-11-26T14:41:39.229Z - success: project-settings loaded
-2018-11-26T14:41:39.236Z - success: ui-kit loaded
-2018-11-26T14:41:39.242Z - success: scene loaded
-2018-11-26T14:41:39.243Z - success: sprite-editor loaded
-2018-11-26T14:41:39.249Z - success: store loaded
-2018-11-26T14:41:39.258Z - success: timeline loaded
-2018-11-26T14:41:39.258Z - normal: Loading builtin packages
-2018-11-26T14:41:39.274Z - success: asset-db-debugger loaded
-2018-11-26T14:41:39.277Z - success: code-editor loaded
-2018-11-26T14:41:39.277Z - success: color-picker loaded
-2018-11-26T14:41:39.471Z - success: google-play-instant loaded
-2018-11-26T14:41:39.475Z - success: jsb-adapter loaded
-2018-11-26T14:41:39.481Z - success: oppo-runtime loaded
-2018-11-26T14:41:39.487Z - success: package-manager loaded
-2018-11-26T14:41:39.717Z - success: qqplay-adapter loaded
-2018-11-26T14:41:39.727Z - success: sdkbox loaded
-2018-11-26T14:41:39.732Z - success: tester loaded
-2018-11-26T14:41:39.736Z - success: ui-grid loaded
-2018-11-26T14:41:39.741Z - success: ui-kit-preview-extra loaded
-2018-11-26T14:41:39.744Z - success: ui-kit-preview loaded
-2018-11-26T14:41:39.747Z - success: ui-tree loaded
-2018-11-26T14:41:39.752Z - success: vivo-runtime loaded
-2018-11-26T14:41:39.754Z - success: weapp-adapter loaded
-2018-11-26T14:41:41.835Z - normal: Loading packages
-2018-11-26T14:41:41.846Z - normal: Watching packages
-2018-11-26T14:41:42.541Z - normal: Run Application
-2018-11-26T14:41:44.123Z - success: preview server running at http://localhost:7457
-2018-11-26T14:44:39.063Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:2134
-2018-11-26T15:07:07.704Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:18477
-2018-11-26T15:13:51.748Z - error: TypeError: Cannot read property 'some' of undefined
-    at HTMLElement.pasteTheCopiedKeys (D:\CocosCreator\resources\app.asar\editor\builtin\timeline\panel\index.js:1:3005)
-    at _fireCallback (D:\CocosCreator\resources\app.asar\node_modules\mousetrap\mousetrap.js:605:17)
-    at Mousetrap.self._handleKey (D:\CocosCreator\resources\app.asar\node_modules\mousetrap\mousetrap.js:666:21)
-    at Mousetrap.handleKey (D:\CocosCreator\resources\app.asar\node_modules\mousetrap\mousetrap.js:983:32)
-    at HTMLElement._handleKeyEvent (D:\CocosCreator\resources\app.asar\node_modules\mousetrap\mousetrap.js:726:18)
-2018-11-26T15:26:18.985Z - error: Failed to apply "scoreFX" because the prefab asset is missing, please save the prefab to a new asset by dragging and drop the node from Node Tree into Assets.
-    at Object.applyPrefab (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5783)
-    at Object.save (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\edit-mode\modes\prefab.js:1:2317)
-    at Object.close (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\edit-mode\modes\prefab.js:1:1772)
-    at Object.run (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\edit-mode\index.js:1:817)
-    at _queue.s.queue (D:\CocosCreator\resources\app.asar\editor\page\scene-utils\lib\tasks.js:1:539)
-    at D:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:987:13
-    at Object.process (D:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:953:21)
-    at D:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:911:19
-    at D:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:44:16
-2018-11-26T15:26:20.696Z - warn: The Prefab used by node "New Node" is missing. Detailed information:
-Node path: "scoreFX/animRoot/New Node"
-Missing uuid: "3fcd6f83-a054-4d08-a05b-91988d829bba"
-
-2018-11-26T15:26:20.697Z - warn: The AnimationClip used by component "cc.Animation" is missing. Detailed information:
-Node path: "scoreFX/animRoot"
-Missing uuid: "6f0fd558-97f5-4df3-99cc-0acb91218ff5"
-
-2018-11-26T15:26:20.697Z - warn: The AnimationClip used by component "cc.Animation" is missing. Detailed information:
-Node path: "scoreFX/animRoot"
-Missing uuid: "6f0fd558-97f5-4df3-99cc-0acb91218ff5"
-
-2018-11-26T15:26:21.111Z - warn: The Asset used by node "New Node" in scene "game.fire" is missing. Detailed information:
-Node path: "scoreFX/animRoot/New Node"
-Asset url: "db://assets/game.fire"
-Missing uuid: "3fcd6f83-a054-4d08-a05b-91988d829bba"
-
-2018-11-26T15:26:21.112Z - warn: The Asset used by component "cc.Animation" in scene "game.fire" is missing. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/game.fire"
-Missing uuid: "6f0fd558-97f5-4df3-99cc-0acb91218ff5"
-
-2018-11-26T15:26:21.112Z - warn: The Asset used by node "animRoot" in scene "game.fire" is missing. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/game.fire"
-Missing uuid: "3fcd6f83-a054-4d08-a05b-91988d829bba"
-
-2018-11-26T15:26:21.113Z - warn: The Asset used by node "scoreFX" in scene "game.fire" is missing. Detailed information:
-Node path: "scoreFX"
-Asset url: "db://assets/game.fire"
-Missing uuid: "3fcd6f83-a054-4d08-a05b-91988d829bba"
-
-2018-11-26T15:28:49.278Z - warn: Script attached to "animRoot" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "b1f9ef3c-6077-46af-ba83-d7bb21b6bdb0"
-Class ID: "b1f9e88YHdGr7qD17shtr2w"
-
-2018-11-26T15:28:49.281Z - warn: Script attached to "scoreFX" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "dd18cebb-a6bf-4e33-9c09-6ffc98e8e9df"
-Class ID: "dd18c67pr9OM5wJb/yY6Onf"
-
-2018-11-26T15:28:49.385Z - warn: The Asset used by component "cc.Label" in prefab "scoreFX.prefab" is missing. Detailed information:
-Node path: "scoreFX/animRoot/score"
-Asset url: "db://assets/scoreFX.prefab"
-Missing uuid: "880f089c-d64f-4959-8927-4bb53a74ed80"
-
-2018-11-26T15:28:49.385Z - warn: The Asset used by component "cc.Animation" in prefab "scoreFX.prefab" is missing. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/scoreFX.prefab"
-Missing uuid: "e00abb4e-4c93-4029-8e30-e91c1503802d"
-
-2018-11-26T15:30:44.164Z - warn: Script attached to "animRoot" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "b1f9ef3c-6077-46af-ba83-d7bb21b6bdb0"
-Class ID: "b1f9e88YHdGr7qD17shtr2w"
-
-2018-11-26T15:30:44.167Z - warn: Script attached to "scoreFX" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "dd18cebb-a6bf-4e33-9c09-6ffc98e8e9df"
-Class ID: "dd18c67pr9OM5wJb/yY6Onf"
-
-2018-11-26T15:30:44.189Z - warn: The Asset used by component "cc.Label" in prefab "scoreFX.prefab" is missing. Detailed information:
-Node path: "scoreFX/animRoot/score"
-Asset url: "db://assets/scoreFX.prefab"
-Missing uuid: "880f089c-d64f-4959-8927-4bb53a74ed80"
-
-2018-11-26T15:30:44.192Z - warn: The Asset used by component "cc.Animation" in prefab "scoreFX.prefab" is missing. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/scoreFX.prefab"
-Missing uuid: "e00abb4e-4c93-4029-8e30-e91c1503802d"
-
-2018-11-26T15:30:44.269Z - warn: The Asset used by component "ScoreFX" is missing. Detailed information:
-Node path: "scoreFX"
-Missing uuid: "cf8e420b-23e0-4f78-87ce-e11fc2827f37"
-
-2018-11-26T15:30:44.273Z - warn: The Asset used by component "ScoreFX" is missing. Detailed information:
-Node path: "scoreFX"
-Missing uuid: "cf8e420b-23e0-4f78-87ce-e11fc2827f37"
-
-2018-11-26T15:30:44.273Z - warn: The Asset used by component "ScoreFX" is missing. Detailed information:
-Node path: "scoreFX"
-Missing uuid: "cf8e420b-23e0-4f78-87ce-e11fc2827f37"
-
-2018-11-26T15:30:53.373Z - warn: Script attached to "animRoot" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "b1f9ef3c-6077-46af-ba83-d7bb21b6bdb0"
-Class ID: "b1f9e88YHdGr7qD17shtr2w"
-
-2018-11-26T15:30:53.374Z - warn: Script attached to "scoreFX" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "dd18cebb-a6bf-4e33-9c09-6ffc98e8e9df"
-Class ID: "dd18c67pr9OM5wJb/yY6Onf"
-
-2018-11-26T15:30:53.418Z - warn: The Asset used by component "cc.Label" in prefab "scoreFX.prefab" is missing. Detailed information:
-Node path: "scoreFX/animRoot/score"
-Asset url: "db://assets/scoreFX.prefab"
-Missing uuid: "880f089c-d64f-4959-8927-4bb53a74ed80"
-
-2018-11-26T15:30:53.419Z - warn: The Asset used by component "cc.Animation" in prefab "scoreFX.prefab" is missing. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/scoreFX.prefab"
-Missing uuid: "e00abb4e-4c93-4029-8e30-e91c1503802d"
-
-2018-11-26T15:31:30.008Z - warn: Script attached to "animRoot" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "b1f9ef3c-6077-46af-ba83-d7bb21b6bdb0"
-Class ID: "b1f9e88YHdGr7qD17shtr2w"
-
-2018-11-26T15:31:30.009Z - warn: Script attached to "scoreFX" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "dd18cebb-a6bf-4e33-9c09-6ffc98e8e9df"
-Class ID: "dd18c67pr9OM5wJb/yY6Onf"
-
-2018-11-26T15:31:30.100Z - warn: The Asset used by component "cc.Label" in prefab "scoreFX.prefab" is missing. Detailed information:
-Node path: "scoreFX/animRoot/score"
-Asset url: "db://assets/scoreFX.prefab"
-Missing uuid: "880f089c-d64f-4959-8927-4bb53a74ed80"
-
-2018-11-26T15:31:30.101Z - warn: The Asset used by component "cc.Animation" in prefab "scoreFX.prefab" is missing. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/scoreFX.prefab"
-Missing uuid: "e00abb4e-4c93-4029-8e30-e91c1503802d"
-
-2018-11-26T15:33:37.486Z - warn: Script attached to "animRoot" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "b1f9ef3c-6077-46af-ba83-d7bb21b6bdb0"
-Class ID: "b1f9e88YHdGr7qD17shtr2w"
-
-2018-11-26T15:33:37.489Z - warn: Script attached to "scoreFX" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "dd18cebb-a6bf-4e33-9c09-6ffc98e8e9df"
-Class ID: "dd18c67pr9OM5wJb/yY6Onf"
-
-2018-11-26T15:35:52.959Z - warn: Script attached to "animRoot" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "b1f9ef3c-6077-46af-ba83-d7bb21b6bdb0"
-Class ID: "b1f9e88YHdGr7qD17shtr2w"
-
-2018-11-26T15:35:52.964Z - warn: Script attached to "scoreFX" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "dd18cebb-a6bf-4e33-9c09-6ffc98e8e9df"
-Class ID: "dd18c67pr9OM5wJb/yY6Onf"
-
-2018-11-26T15:36:53.918Z - warn: Script attached to "animRoot" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX/animRoot"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "b1f9ef3c-6077-46af-ba83-d7bb21b6bdb0"
-Class ID: "b1f9e88YHdGr7qD17shtr2w"
-
-2018-11-26T15:36:53.919Z - warn: Script attached to "scoreFX" in prefab "scoreFX.prefab" is missing or invalid. Detailed information:
-Node path: "scoreFX"
-Asset url: "db://assets/scoreFX.prefab"
-Script UUID: "dd18cebb-a6bf-4e33-9c09-6ffc98e8e9df"
-Class ID: "dd18c67pr9OM5wJb/yY6Onf"
-
+2018-11-28T09:30:45.614Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-28T09:30:45.620Z - normal: checking language setting...
+2018-11-28T09:30:45.621Z - normal: Language: zh
+2018-11-28T09:30:47.541Z - success: protocol editor-framework registered
+2018-11-28T09:30:47.541Z - success: protocol app registered
+2018-11-28T09:30:47.541Z - success: protocol theme registered
+2018-11-28T09:30:47.542Z - success: protocol packages registered
+2018-11-28T09:30:47.542Z - success: protocol unpack registerred
+2018-11-28T09:30:47.542Z - success: protocol disable-commonjs registerred
+2018-11-28T09:30:47.770Z - normal: connected!
+2018-11-28T09:30:47.772Z - normal: Check project D:\Cocos\start_project
+2018-11-28T09:30:47.778Z - normal: Initializing project D:\Cocos\start_project
+2018-11-28T09:30:47.786Z - normal: Initializing Cocos2d
+2018-11-28T09:30:48.641Z - normal: Initializing Asset Database
+2018-11-28T09:30:48.716Z - success: protocol uuid registerred
+2018-11-28T09:30:48.716Z - success: protocol db registerred
+2018-11-28T09:30:48.716Z - success: protocol thumbnail registerred
+2018-11-28T09:30:48.717Z - normal: Loading editor/builtin packages
+2018-11-28T09:30:48.907Z - success: assets loaded
+2018-11-28T09:30:48.911Z - success: builder loaded
+2018-11-28T09:30:48.914Z - success: cocos-analytics loaded
+2018-11-28T09:30:48.918Z - success: console loaded
+2018-11-28T09:30:48.965Z - success: fb-instant-games loaded
+2018-11-28T09:30:48.967Z - success: google-instant-games loaded
+2018-11-28T09:30:48.972Z - success: hierarchy loaded
+2018-11-28T09:30:48.975Z - success: inspector loaded
+2018-11-28T09:30:48.977Z - success: keystore loaded
+2018-11-28T09:30:48.982Z - success: node-library loaded
+2018-11-28T09:30:48.984Z - success: package-asset loaded
+2018-11-28T09:30:48.985Z - success: preferences loaded
+2018-11-28T09:30:48.987Z - success: project-exporter loaded
+2018-11-28T09:30:49.007Z - success: project-importer loaded
+2018-11-28T09:30:49.010Z - success: project-settings loaded
+2018-11-28T09:30:49.014Z - success: ui-kit loaded
+2018-11-28T09:30:49.018Z - success: scene loaded
+2018-11-28T09:30:49.019Z - success: sprite-editor loaded
+2018-11-28T09:30:49.022Z - success: store loaded
+2018-11-28T09:30:49.027Z - success: timeline loaded
+2018-11-28T09:30:49.027Z - normal: Loading builtin packages
+2018-11-28T09:30:49.031Z - success: asset-db-debugger loaded
+2018-11-28T09:30:49.033Z - success: code-editor loaded
+2018-11-28T09:30:49.034Z - success: color-picker loaded
+2018-11-28T09:30:49.148Z - success: google-play-instant loaded
+2018-11-28T09:30:49.150Z - success: jsb-adapter loaded
+2018-11-28T09:30:49.154Z - success: oppo-runtime loaded
+2018-11-28T09:30:49.157Z - success: package-manager loaded
+2018-11-28T09:30:49.291Z - success: qqplay-adapter loaded
+2018-11-28T09:30:49.296Z - success: sdkbox loaded
+2018-11-28T09:30:49.299Z - success: tester loaded
+2018-11-28T09:30:49.301Z - success: ui-grid loaded
+2018-11-28T09:30:49.303Z - success: ui-kit-preview-extra loaded
+2018-11-28T09:30:49.306Z - success: ui-kit-preview loaded
+2018-11-28T09:30:49.308Z - success: ui-tree loaded
+2018-11-28T09:30:49.311Z - success: vivo-runtime loaded
+2018-11-28T09:30:49.312Z - success: weapp-adapter loaded
+2018-11-28T09:30:50.769Z - normal: Loading packages
+2018-11-28T09:30:50.776Z - normal: Watching packages
+2018-11-28T09:30:51.252Z - normal: Run Application
+2018-11-28T09:30:53.834Z - success: preview server running at http://localhost:7456
+2018-11-28T09:31:01.570Z - failed: load script [Player] failed : Error: Cannot find module 'Player'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (D:\软件\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (D:\软件\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (D:\软件\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:589)
+    at D:\Cocos\start_project\temp\quick-scripts\assets\scripts\Game.js:1:347
+    at __define (D:\Cocos\start_project\temp\quick-scripts\assets\scripts\Game.js:16:14)
+    at D:\Cocos\start_project\temp\quick-scripts\assets\scripts\Game.js:180:13
+2018-11-28T09:31:01.572Z - warn: The 'type' attribute of 'Game.player' is undefined when loading script

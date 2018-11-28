@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "Star",
+    "_name": "star",
     "_objFlags": 0,
     "_native": "",
     "data": {

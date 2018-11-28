@@ -49,6 +49,7 @@ cc.Class({
 
     onKeyDown: function onKeyDown(event) {
         // set a flag when key pressed
+        // cc.log(event.target)
         switch (event.keyCode) {
             case cc.macro.KEY.a:
                 this.accLeft = true;
@@ -69,6 +70,10 @@ cc.Class({
                 break;
         }
     },
+    onDeviceMotionEvent: function onDeviceMotionEvent(event) {
+        cc.log(event.acc.x + "   " + event.acc.y);
+        cc.log(event.acc);
+    },
     onLoad: function onLoad() {
         // 场景加载后开始执行
         this.enabled = false;
@@ -84,6 +89,10 @@ cc.Class({
         // 初始化键盘按键监听
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+
+        // 重力传感监听
+        cc.systemEvent.setAccelerometerEnabled(true);
+        cc.systemEvent.on(cc.SystemEvent.EventType.DEVICEMOTION, this.onDeviceMotionEvent, this);
     },
     onDestroy: function onDestroy() {
         // 取消键盘按键监听

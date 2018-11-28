@@ -132,10 +132,14 @@ cc.Class({
 
     spawnScoreFX: function spawnScoreFX() {
         var fx;
-
-        fx = cc.instantiate(this.scoreFXPrefab).getComponent('ScoreFX');
-        fx.init(this);
-        return fx;
+        if (this.scorePool.size() > 0) {
+            fx = this.scorePool.get();
+            return fx.getComponent('ScoreFX');
+        } else {
+            fx = cc.instantiate(this.scoreFXPrefab).getComponent('ScoreFX');
+            fx.init(this);
+            return fx;
+        }
     },
 
     getNewStarPosition: function getNewStarPosition() {
